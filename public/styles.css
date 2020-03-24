@@ -1,0 +1,283 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto-Regular', sans-serif;
+  color: #111111;
+}
+
+.global {
+	max-width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header{
+	padding: 20px 0;
+	margin: 15px 0 0 0;
+	font-size: 16px;
+}
+
+/* Links */
+
+.links {
+	display: grid;
+	grid-template-columns: 0.30fr 0.1fr 0.1fr;
+	gap: 20px;
+	margin: 10px 0 0 60px;
+}
+
+.links img{
+	width: 90.6px;
+	height: 26.9px;
+}
+
+.links a {
+	color: #111;
+	text-decoration: none;
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 10px 0;
+}
+
+/* Banner Chefe */
+
+.grid_banner {
+	position: relative;
+	width: 85%;
+	height: 400px;
+	padding: 90px;
+	background-color: #fbdffb;
+	border-radius: 30px;
+	display: grid;
+	grid-template-columns: 0.3fr 0.5fr;
+	gap: 20px;
+	overflow: hidden;
+	margin-left: 60px;
+	margin-bottom: 50px;
+	align-items: center;
+}
+
+.grid-banner-content {
+	align-items: center;
+}
+
+.grid-banner-content h1 {
+	color: #333;
+	font-size: 3.3rem;
+	padding: 12px;
+	line-height: 20px;
+}
+
+.grid-banner-content p {
+	max-width: 450px;
+	color: #333;
+	filter: brightness(2);
+	font-size: 1.5rem;
+	padding: 12px;
+	margin: 15px 0;
+}
+
+.grid_banner-img img {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 290px;
+	height: 370px;
+	padding: 10px;
+}
+
+/* Cards */
+
+.title {
+	font-size: 24px;
+	margin: 32px 0 0 60px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	max-width: 100%;
+	margin: 25px 140px 0 60px;
+	cursor: pointer;
+}
+
+.card-img img{
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 25px;
+}
+
+.card_content h1{
+	font-size: 1.4rem;
+	padding-bottom: 4px;
+	font-weight: bold;
+	filter: brightness(50%);
+	color: #999999;
+}
+
+.card_info {
+	color: #666;
+	font-size: 1rem;
+	padding: 4px;
+	filter: brightness(90%);
+	margin-bottom: 25px;
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	background-color: #eee;
+	padding: 0;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.foo {
+	margin: 18px;
+	text-align: center;
+}
+
+.foo p {
+	color: #999999;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+
+/* Texto Sobre */
+
+#aboutext {
+	margin: 15px 140px 0 60px;
+	padding: 5px;
+}
+
+#aboutext h1{
+	font-family: 'Roboto-Bold';
+	color: #333;
+	font-size: 2rem;
+	padding: 12px;
+	line-height: 20px;
+}
+
+#aboutext h2{
+	font-family: 'Roboto-Bold';
+	color: #333;
+	font-size: 1.5rem;
+	padding: 12px;
+	line-height: 20px;
+}
+
+#aboutext p{
+	color: #333;
+	filter: brightness(2);
+	font-size: 1rem;
+	padding: 12px;
+	margin: 15px 0;
+	text-align: justify;
+}
+
+/* Recipe */
+
+.recipe {
+	height: 280px;
+	width: 100%;
+	max-width: 980px;
+	position: relative;
+}
+
+.imagecenter {
+	margin-left: 60px;
+}
+
+.imagecenter img {
+	border-radius: 15px;
+}
+
+.recipe-detail {
+	display: grid;
+	grid-template-columns: 100%;
+	margin: 0 auto;
+}
+
+.title-detail {
+	margin:	20px 10px 10px 400px;
+}
+
+.title-detail h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.title-detail p {
+	margin-left: 72px;
+	font-size: 20px;
+	color: #777777;
+}
+
+.ingredient {
+	margin-left: 60px;
+	padding-top: 30px;
+}
+
+
+.ingredientes h3 {
+	font-size: 24px;
+	color: #111;
+	display: grid;
+	grid-template-columns: 100%;
+	margin-top: -5px;
+}
+
+.ingredient .hide {
+	background-color: #fff;
+	color: #999;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 12px;
+	width: 61px;
+	height: 14px;
+	margin-left: 230px;
+	cursor: pointer;
+	float: left;
+	margin-top: -15px;
+	border: none;
+}
+
+.none{ 
+	display: none;
+}
+
+.ingredientes-itemsreceita {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.ingredientes-itemsprepare {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.ingredientes-itemsinformation {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.descriptions-items {
+	color: #444;
+	font-size: 18px;
+	font-family: 'Roboto-Regular', sans-serif;	
+}
+

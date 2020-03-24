@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+  
+  {% block content %}
+<!-- Chef Lacumn-->
+   <section>
+   
+    <div class="grid_banner">
+      <div class="grid_banner-content">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos com receitas criadas por 
+        profissionais do mundo inteiro</p>
+      </div>
+      <div class="grid_banner-img">
+        <img src="/layout/chef.png" alt="Chefe">
+      </div>
+    </div>
+
+   </section> 
+  
+  <!-- Cards --> 
+   
+    <h1 class="title">Mais acessadas</h1>
+    
+      <section class="cards">
+
+      {% for item in items %}
+            
+      <div class="card">
+        <div class="card-img">
+          <a><img src="{{item.image}}" alt="Imagem de {{item.title}}"></a>
+        </div>
+        <div class="card_content">
+          <h1 class="card-title">{{item.title}}</h1>
+        </div>
+        <div class="card_info">  
+          <p class="author">{{item.author}}</p>
+        </div>
+         
+      </div>
+      
+      {% endfor %}
+
+   </section>
+
+  {% endblock %}
+   

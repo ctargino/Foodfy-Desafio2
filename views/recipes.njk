@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+  {% block content %}
+		<div id="cardstitle">
+      <h1></h1>
+    </div>
+
+    <section class="cards">
+
+      {% for item in items%}
+
+      <div class="card" id="{{item.id}}">
+        <div class="card-img">
+          <a><img src="{{item.image}}" alt="Imagem de {{item.title}}"></a>
+        </div>
+        <div class="card_content">
+          <h1 class="card-title">{{item.title}}</h1>
+        </div>
+        <div class="card_info">  
+          <p class="author">{{item.author}}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+      
+    </section>
+
+    <script src="/scripts.js"></script>
+
+  {% endblock %}
